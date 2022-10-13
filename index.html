@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="az">
+
+<head>
+	<title>Simple web Development Template</title>
+
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid white;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color: white;
+			height: 400px;
+		}
+
+		.secondsection {
+			background-color: white;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+
+			<div class="logo">
+				<a href="index.html">
+					<img src="logo.jpg">
+				</a>
+
+			</div>
+			<li><a href="index.html">Ana Səhifə</a></li>
+			<li><a href="kibhucum.html">Kiber Hücumlar</a></li>
+			<li><a href="qorunma.html">Necə qoruna bilərsiniz ?</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search" placeholder="Axtarış">
+			<button class="btn btn-sm">Axtar</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<br>		<br> <br><br><br>
+				<h1 class="text-big" id="web">Kiber təhlükəsizlik nədir?</h1>
+				<p class="text-small">
+
+					İnternet və sosial media istifadəsinin ciddi dərəcə artması səbəbilə informasiya ilə bağlı bütün
+					mövzular daha da ciddiyə alınmağa başladı. Xüsusilə Kiber sözü ilə başlayan ixtisaslar, peşələr,
+					kurslar, seminarlar və s. Yunanca “yönləndirmək” mənasına verən “kubernan” sözü ilk dəfə 1948-ci
+					ildə İngilis dilinə “cybernetics” olaraq daxil oldu. 1958-də isə Lois Couffignal tərəfindən canlılar
+					və robotlar arasındakı əlaqəni izah etmək üçün “Cyber” olaraq istifadə edildi. Kiber sözü də təxmin
+					edildiyi kimi Cyber sözünün Azərbaycan dilinə tərcümə edilmiş versiyasıdır.
+					<br>
+					Real həyatda təhlükəsizliyimizin önəmli olması kimi virtual aləmdə də təhlükəsizlik önəmlidi və bu
+					Kiber Təhlükəsizlik olaraq adlanır. Kiber təhlükəsizliyə ümumi olaraq komputer təhlükəsizliyi,
+					əməliyyatların təhlükəsizliyi, məlumatların qorunması, şəxsi məlumatların təhlükəsizliyi, internet
+					şəbəkəsinin təhlükəsizliyi, hətta hər hansı siqnal ötürməsini edən cihazların təhlükəsizliyi
+					daxildir. Bu mövzuların belə budaqlanmasına və önəm qazanmasına səbəb qarşılaşılan kiber hücum və
+					təhlükələrdir. Kiber hücumların sayı və tipi artdıqca, mütənasib olaraq kiber təhlükəsizliyin
+					qolları da artdı. 1980-ci illərdən etibarən Kiber Cinayətkarlar, Kiber Dünyada Etika, Etik Kiber
+					Piratçılıq kimi anlayışlar yarandı.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="program">
+					Kiber təhlükəsizliyin ilk addımı: Məlumatların təhlükəsizliyi üçün standartlar
+				</h1>
+				<p class="text-small">
+
+					Şəxsi məlumatların qorunması üçün atılan ilk addım 1990-cı illərin ortalarına təsadüf edir. Bu
+					illərdə İngiltərədə bəzi sənaye quruluşları və Standartlar üniversitetinin vasitəsilə təməllər
+					atılaraq ‘BS7799’ standartı yaradılıb. Bu standartlar yaradıldıqdan sonra ölkələr əsasən də ABŞ kimi
+					nəhəng ölkələr 1 il ərzində Kiber təhlükəsizliyə 13 milyard dollar xərcləyəcək yüksək naliyyətlər
+					əldə ediblər. Bu standartlar hər 4-5 ildən bir yenilənərək müasir tələblərə uyğun dəyişdirilir.
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">Kiber təhlükəsizliyin yaranmasına səbəb olan Kiber hücumları kimlər edir?</h1>
+
+			<p class="sectionSubTag text-small">
+				
+
+				İnformasiya sistemlərinə sızan, məlumatları oğurlayan, şəbəkələrə kiber hücumlar edən pis niyyətli
+				şəxslərə adətən “hacker”, “cracker”, qara şapqalı xakerlər və ya kibercinayətkarlar deyilir. Bu insanlar
+				adətən mükəmməl dərəcədə kod yazmağı bacaran, tərsinə mühəndislik bacarıqlarına malik olan insanlardır.
+				Bu tip insanlara misal olaraq Kevin Mitnick adlı şəxsi göstərmək olar. Dünya tarixində yeganə insandır
+				ki, kofe maşınına yaxın durması qadağan edilib. Səbəb isə kofe maşınını belə “hack”layaraq öz kodlarını
+				yazıb istifadə etmə bacarığına malik olmasıdır.
+			</p>
+
+
+		</div>
+
+		
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			Copyright ©-Bütün hüquqlar qorunur
+		</p>
+
+
+	</footer>
+</body>
+
+</html>

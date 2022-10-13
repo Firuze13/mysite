@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="az">
+
+<head>
+	<title>Simple web Development Template</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: black;
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 180px;
+			border-radius: 50px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: grey;
+		}
+
+		.rightnav {
+			width: 30%;
+			text-align: right;
+		}
+
+		#search {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid white;
+			border-radius: 9px;
+		}
+
+		.firstsection {
+			background-color: white;
+			height: 400px;
+		}
+
+		.secondsection {
+			background-color: white;
+			height: 400px;
+		}
+
+		.box-main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			max-width: 80%;
+			margin: auto;
+			height: 80%;
+		}
+
+		.firsthalf {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.secondhalf {
+			width: 30%;
+		}
+
+		.secondhalf img {
+			width: 70%;
+			border: 4px solid white;
+			border-radius: 150px;
+			display: block;
+			margin: auto;
+		}
+
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			font-weight: bold;
+			font-size: 35px;
+		}
+
+		.text-small {
+			font-size: 18px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+
+		.section {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 90%;
+			margin: auto;
+		}
+
+		.section-Left {
+			flex-direction: row-reverse;
+		}
+
+		.paras {
+			padding: 0px 65px;
+		}
+
+		.thumbnail img {
+			width: 250px;
+			border: 2px solid black;
+			border-radius: 26px;
+			margin-top: 19px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<a href="index.html">
+					<img src="logo.jpg">
+				</a>
+
+				<li><a href="index.html">Ana Səhifə</a></li>
+				<li><a href="kibhucum.html">Web Technology</a></li>
+				<li><a href="qorunma.html">Necə qoruna bilərik ?</a></li>
+		</ul>
+
+		<div class="rightNav">
+			<input type="text" name="search" id="search" placeholder="Axtar">
+			<button class="btn btn-sm">Axtarış</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big" id="web"> </h1>
+				<p class="text-small">
+
+				</p>
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="section">
+		<div class="paras">
+			<br><br><br><br>
+			<h1 class="sectionTag text-big" id="course">Necə qoruna bilərsiniz ? </h1>
+			<br>
+			<h1 class="sectionSubTag text-small">
+				<h1>1) Kompüterinizi Aktual Saxlayın</h1>
+				Əməliyyat sistemlərində və proqramlarda kompüterinizə zərər verəcək açıqlar və səhvlər ola bilər. Bu
+				açıqlar, pis niyyətli kəslər tərəfindən tapılsa kompüterinizin yavaşlaması, səhv verməsi, istəmədiyiniz
+				şeylər etməsi, şəxsi məlumatlarınızın oğurlanma, məlumat itkiləri kimi istənməyən nəticələr meydana gələ
+				bilər. Proqram istehsalçıları, öz məhsullarındakı səhvlərin fərqinə vardıqda bunları düzəltməyə
+				çalışırlar. Bu səbəblə tez-tez əməliyyat sistemlərinin və digər proqramların səhv düzəltmələri ehtiva
+				edən yeni versiyaları çıxır. Buna görə kompüterinizin aktual qalması əhəmiyyətlidir. Kompüterinizi
+				aktual tuta bilmək üçün avtomatik yeniləmə proqramlarını aktiv hala gətirməli, nizamlı olaraq istifadə
+				etdiyiniz proqramların aktual distributivlərinin çıxıb çıxmadığını nəzarət etməlisiniz. Windows
+				əməliyyat sistemi yeniliklərinin update.microsoft.com ünvanından təqib edə bilərsiniz. Hər hansı bir
+				Linux paylamas istifadə, əməliyyat sistemi ilə yanaşı istifadə etdiyiniz bütün digər proqramların
+				yeniliklərinin, paket idarəçisi proqramlarından tək basma ilə edə bilərsiniz.
+				<br>
+				<br>
+
+				<h1>2) Təhlükəsiz Yazılımlar Seçin</h1>
+				Hər kompüter proqramı eyni nisbətdə etibarlı deyil. Bəzi proqramlar, digərlərinə görə həddindən artıq
+				səhv / açıq ehtiva edirlər. Hətta bəzi proqramlar, yalnız başqa kompüterlərə zərər vermək məqsədilə
+				yazılmışdır. Bu səbəblə etibarlı proqramları seçmək vacibdir. Ümumi olaraq, böyük açıq qaynaq kodlu
+				proqram layihələri, bir çox adam tərəfindən inkişaf etdirilib denetlenebildiğinden daha az təhlükəsizlik
+				açığı ehtiva edərlər. Siz də etibarlı proqramlar istifadəyə Firefox və Thunderbird ilə başlaya
+				bilərsiniz. Windows əməliyyat sisteminin risklərini tamamilə uzaqlaşmaq üçün Linux əsaslı əməliyyat
+				sistemlərini kullanabilirsiniz. Misal üçün Pardus, Tübitak UEKAE tərəfindən inkişaf etdirilən asan
+				istifadə edilə bilər, Türkçe bir Linux dağıtımının.
+				<br>
+				<br>
+				<h1>3) Virusdan Qorunma Proqramı istifadə edin</h1>
+				Virus, soxulcan (worm), truva atı (trojan) kimi proqramlar, kompüterlərə zərər verə biləcək
+				proqramlardır. Müxtəlif qaynaqlardan kompüterinizə bu cür zərərli proqramlar bulaşa bilər. Bu bir
+				disket, CD, DVD və ya USB disk ilə ola bilər. Ancak şübhəsiz İnternet, zərərli proqramların dağılması
+				üçün ən böyük mənbədir. Xüsusilə Azərbaycanda get-gedə yayılan ADSL və ya KabloNet vasitəsilə davamlı
+				bir İnternet bağlantısına sahibsinizsə risk daha böyükdür. Virus və bənzəri proqramların kompüterinizə
+				zərər verməsini önləmək üçün virusdan qorunma (antivirus) proqramları istifadə lazımdır. Bu proqramlar,
+				istədiyiniz zaman kompüterinizi tamamilə darayaraq zərərli proqramları tapıb temizleyebilecekleri kimi,
+				davamlı arxa planda çalışaraq gələn bir təhlükəni anında idarə altına ala bilərlər. Hər gün təxminən üç
+				yeni virus ortaya çıxmaqda və təhlükəli viruslar ortaya çıxmalarından etibarən bir neçə saat içində çox
+				sürətli bir şəkildə yayılmaqdadır. Yeni viruslara qarşı qorunmaq üçün aktual virus məlumatlarına sahib
+				olmaq lazımdır. Bu səbəblə bu proqramları çıxaran firmalar gündə / həftədə bir neçə dəfə virus məlumatı
+				olan verilənlər bazalarını yenilərlər. Virusdan qorunmaq proqramları istifadə edən insanların bilməsi
+				lazım olan ən əhəmiyyətli şey, bu proqramların tez-tez yenilənməsi lazım olduğudur. Virus və digər
+				zərərli proqramlardan qorunmaq üçün ödənişli antivirus proqramları istifadə edə biləcəyiniz kimi
+				Antivir, Avast, AVG, ClamAV kimi müvəffəqiyyətli nişan da istifadə edə bilərsiniz. Windows xaricindəki
+				əməliyyat sistemlərində isə (MacOS, Linux, Solaris, BSD vs) kompüterinizə zərər verə biləcək aktiv
+				viruslar olmadığı üçün antivirüs proqramları istifadə etməyinizə ehtiyac qalmaz.
+				<br>
+				<br>
+				<h1>4) Təhlükəsizlik Divarı istifadə edin</h1>
+
+				İnternet üzərindən bir kompüterə hücum reallaşdırmaq istəyən insanlar, qarşıdakı kompüterlərdə açıq bir
+				əlaqə nöqtəsi axtarırlar. Belə bir əlaqə nöqtəsi tapmaları halında, xüsusi məlumatlarınızı,
+				şifrələrinizi, kredit kartı nömrənizi ələ keçirə bilər; kompüterinizi qanunsuz işlər üçün istifadə edə
+				bilər, sisteminizə zərər verə bilərlər. Veb skanerləri, e-poçt proqramları, anında mesajlaşma
+				proqramları, çox oyuculu oyunlar və əməliyyat sistemlərində müsbət bir özellikmiş kimi görünən bəzi
+				xidmətlər asan kırılabilen bir əlaqə nöqtəsi yarada. Açıq əlaqə nöqtələrini bağlayaraq çöldən gələn
+				hücumları qarşısını almaq və kompüterinizdə icazə vermədiyiniz proqramların İnternetə əlaqələrini
+				önləmək üçün təhlükəsizlik divarı (firewall) adı verilən proqramları istifadə edilə bilər. Məsələn,
+				Windows XP istifadəçiləri Service Pack 2 yeniləməsini yükləyərək, pulsuz bir təhlükəsizlik divarına
+				sahib ola bilərlər. Təhlükəsizlik duvarınızın aktiv vəziyyətdə olub olmadığından əmin olmaq üçün Yoxlama
+				Masası'ndaki Windows Təhlükəsizlik Mərkəzini ziyarət edilə bilər.
+				<br>
+				<br>
+				<h1>5) Etibar etmədiyiniz İnternet saytlarına Diqqət Edin</h1>
+
+				Yuxarıda qeyd olunduğu kimi, kompüterlə əlaqədar təhlükəsizlik risklərinin böyük hissəsi İnternet
+				qaynaqlıdır. Bilinməyən İnternet saytlarını ziyarət edən istifadəçilər, zərərli kodlar ehtiva edən web
+				tətbiqlərini işlədərək ya da virus saxlayan faylları kompüterlərinə endirərək kompüterlərinə zərər verə
+				bilərlər. Xüsusilə qeyri-qanuni məzmunlu saytlar (Hack, Crack, Warez, Porno vs.) Sizin kompüterinizə
+				zərər verməkdən də çekinmeyeceklerdir. Bu səbəblə veb skanerlərin təhlükəsizlik xəbərdarlıqlarını
+				diqqətsizcə «bəli» deyərək keçmək, hər əlaqəyə (link) şüursuzca basmaq, hər faylı yükləməyə çalışmaq,
+				qaçınılması lazım olan davranışlardır.
+				<br>
+				<br>
+				<h1>6) Bilmədiyiniz E-poçtları və Faylları Açmayın</h1>
+
+				Təhlükəsizlik belə təmin edilməz:) Virusların və digər zərərli proqramların özlərini paylamaq üçün ən
+				çox üstünlük etdikləri üsul e-poçt göndermektir. Tanımadığınız kəslərdən gələn, başlıqları şübhəli olan
+				və əlavə fayl (attachment) ehtiva edən e-poçtların virus olma ehtimalları yüksəkdir. Belə hallarda
+				e-məktubun açılmadan silinməsi lazımdır. E-poçt və ya anında mesajlaşma proqramları vasitəsilə (MSN
+				Messenger, ICQ, GTalk vs) tanıdığınız birindən gəlmiş görünsə belə bir fayl, adamın xəbəri olmadan onun
+				kompüterindən bir virus tərəfindən göndərilmiş ola bilər. Hətta bir e-poçt fərqli bir adamın e-poçt
+				ünvanından gəlirmiş kimi göstərilə bilər. Bu səbəblə tanıdığınız birindən nə olduğunu bilmədiyiniz bir
+				fayl aldıqda, o adama geri dönüb bunu həqiqətən onun göndərib yollamadığını soruşmaq ən doğrusudur.
+				Bundan başqa, son zamanlarda olduqca məşhur olan paylaşım proqramları (Bittorent, Qəzaya, I-Mesh,
+				E-Donkey, DC + + kimi) müəllif hüquqlarını pozan fayllar saxlamaları səbəbiylə tartışılmalarının ilə
+				yanaşı, fərqli adlar altında zərərli fayllar da bulundurabilmektedirler. Bu vəziyyətdən zərər görməmək
+				üçün də bir virusdan qorunmaq proqramının aktiv halda saxlanılması vacibdir.
+
+				<br> <br>
+				<h1>7) Aldatmacalara Diqqət Edin</h1>
+
+				Gerçək həyatda olduğu kimi İnternet üzərində də insanları aldadaraq və ya istəklərini sui edərək
+				qeyri-qanuni işlər etməyə çalışan insanlar vardır. Cəmiyyət mühəndisliyi (social engineering) adı
+				verilən bu davranış ümumiyyətlə kişiləri aldatmaq və ya xüsusi məlumatlarını ələ keçirmək məqsədi ilə
+				edilir. Xüsusilə sistem idarəçisi olduğunu və müəyyən bir əməliyyatın edilməsi üçün şifrə göndərilməsi
+				lazım olduğunu söyləyən mesajlar, get-gedə daha çox görülən kandırmaca mesajlarıdır. Yemləmə (phishing)
+				deyilən bu tətbiq, bank şifrələrini ələ keçirmək üçün tez-tez istifadə olunur. Bir e-poçtun başqa
+				ünvandan gəlirmiş kimi göstərilməsi də texniki olaraq mümkün olan bir aldatmaca texnikasıdır. Hər vaxt
+				bir məlumatın bir şəkildə dəyişdirilmiş ola biləcəyi və doğru adam tərəfindən gönderilmiyor ola biləcəyi
+				unudulmaması lazım olan bir mövzudur. Ətraflı məlumat üçün bu sayımızdaki Cəmiyyət Mühəndisliyi yazımıza
+				göz ata bilərsiniz…
+				</p>
+				<br><br><br><br><br>
+
+
+		</div>
+
+
+	</section>
+
+
+
+
+</body>
+
+</html>
